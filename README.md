@@ -1,1 +1,1 @@
-#This repository is created for practising git
+# This repository is created for practicing git
