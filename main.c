@@ -76,9 +76,9 @@ int main(void)
 	uint16_t led_toggle_val = LED_TOGGLE_MASK;
 
 	while (1) {
-		led_write(led_toggle_val, BOARD_LED_MASK);
+		led_write(led_toggle_val, BOARD_LED_MASK&0xff);
 		led_toggle_val = ~led_toggle_val;
-		board_delay_ms(500, 1);
+		board_delay_ms(2000, 1);
 	}
 
 	return E_SYS;
